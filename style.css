@@ -1,0 +1,13 @@
+/* création de variable pour les couleurs */
+:root {
+    --color1: #ffedd2;
+    --color2: #ffebcd;
+    --section2: #f1f2f6;
+    --label1: #01df74;
+    --label2: #00ffff;
+    --footer: #7e6329;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
