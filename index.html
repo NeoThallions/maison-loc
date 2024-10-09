@@ -12,7 +12,9 @@
 </head>
 <body>
     <nav>
-        <button>clos marsault</button>
+        <div>
+            <button>clos marsault</button>
+        </div>
         <ul>
             <li>
                 <a href="#">nous contacter</a>
@@ -52,30 +54,35 @@
     <section class="section-2">
         <h2>et tant à découvrir</h2>
         <div class="grid-container">
+
             <div class="ocean">
-                
                     <img src="./assets/img/ocean.jpg" alt="ocean" >
-                    <h3>L'océan Atlantique</h3>
-               
+                    <div class="txt-ocean">
+                        <h3>L'océan Atlantique</h3>
+                    </div>              
             </div>
+
             <div class="chateau">
-               
-                    <h3>Les châteaux du Médoc</h3>
+                    <div class="txt-chateau">
+                        <h3>Les châteaux du Médoc</h3>
+                    </div>
                     <img src="./assets/img/chateau.JPG" alt="chateau" >
-               
             </div>
-            <div class="phare">
-                
+
+            <div class="phare">                
                     <img src="./assets/img/phare.JPG" alt="phare" >
-                    <h3>L'estuaire de la Gironde</h3>
-               
-            </div>
-            <div class="vignes">
+                    <div class="txt-phare">
+                        <h3>L'estuaire de la Gironde</h3>
+                    </div>
+                </div>
                 
-                    <h3>Le vignoble Bordelais</h3>
+            <div class="vignes">
+                    <div class="txt-vignes">
+                        <h3>Le vignoble Bordelais</h3>
+                    </div>
                     <img src="./assets/img/vignes.jpg" alt="vignes" >
-              
             </div>
+            
         </div>
     </section>
     <footer>
@@ -85,7 +92,7 @@
                 <input type="text" placeholder="Nom" >
                 <input type="text" placeholder="Email">
                 <textarea placeholder="Votre message ici"></textarea>
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Envoyer" id="send">
             </form>
         </div>
         <div class="copy-rzo">
@@ -96,13 +103,19 @@
             <div class="rzo">
                 <ul>
                     <li>
-                        <i class="fa-brands fa-twitter"></i>
+                        <a href="https://twitter.com/?lang=fr" target="blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <a href="https://www.facebook.com/?locale=fr_FR" target="blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/" target="blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
