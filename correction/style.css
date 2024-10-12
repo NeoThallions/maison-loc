@@ -1,0 +1,157 @@
+/* ***********   création de variables pour les couleurs  *********/
+:root {
+    --color1: #f4f1df;
+    --color2: #f7ecd5;
+    --section1: #fff8df;
+    --section2: #eff1f5;
+    --label1: #01df74;
+    --label2: #00ffff;
+    --footer: #524838;
+}
+
+/* ************     détermination des fonts     **************** */
+
+@font-face {
+    font-family: "AdventPro";
+    src: url(./assets/fonts/AdventPro-Regular.ttf);
+}
+@font-face {
+    font-family: "AdventProMedium";
+    src: url(./assets/fonts/AdventPro_SemiExpanded-Medium.ttf);
+}
+@font-face {
+    font-family: "DancingScript";
+    src: url(./assets/fonts/DancingScript-Regular.ttf);
+}
+
+/* ************     paramètres généraux     **************** */
+
+body {
+    font-family: "AdventPro", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* *********************        NAV         ********************* */
+nav {
+    overflow: hidden;
+    background-color: var(--color1);
+    position: fixed;
+    width: 100%;
+}
+header li {
+    float: right;
+    font-size: 1.2rem;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo {
+    font-family: "dancingscript", cursive;
+    font-weight: bold;
+    float: left;
+}
+
+/* *********************        IMAGE PRINCIPALE      ********************* */
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(./assets/img/image-principale.JPG) center/cover fixed;
+    height: 799px;
+}
+h1 {
+    font-family: "dancingscript", cursive;
+    text-align: center;
+    color: var(--color2);
+    font-size: 6rem;
+    margin-top: 100px;
+}
+#premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: var(--color2);
+    box-shadow: 1px 3px 2px black;
+}
+h3 {
+    text-align: center;
+    color: var(--color2);
+    font-size: 3rem;
+}
+h1,
+h3 {
+    text-shadow: 1px 3px 2px black;
+}
+
+/* *********************        PRESENTATION     ********************* */
+#presentation {
+    background-color: var(--section1);
+    padding: 10px 0 100px 0;
+}
+#textIntro {
+    padding: 0 20%;
+}
+#prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagesPrestations h4 {
+    font-family: "dancingscript", cursive;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 15px;
+    font-weight: 300;
+}
+.imagesPrestations img {
+    border-radius: 10px;
+    box-shadow: 5px 6px 13px 0px black;
+}
+.imagesPrestations img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+}
+
+/* *********************      TOURISME     ********************* */
+
+#tourisme {
+    height: 1400px;
+    background-color: var(--color2);
+    padding: 1px 2%;
+}
+#tourisme h2 ~ {
+    padding-top: 60px;
+}
+#ocean {
+    background: url(./assets/img/ocean.jpg);
+}
+#chateau {
+    background: url(./assets/img/chateau.JPG);
+}
+#phare {
+    background: url(./assets/img/phare.JPG);
+}
+#vignes {
+    background: url(./assets/img/vignes.jpg);
+}
